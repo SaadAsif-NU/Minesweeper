@@ -279,20 +279,8 @@ public:
 		return (count);
 
 	}
-	void make_move(int* x, int* y)
-	{
-		while (true)
-		{
-			cout << "\nEnter your move: [row] [column] -> ";
-			scanf_s("%d %d", x, y);
-			/* Check values to make sure they're not larger than the board size.*/
-			if ((*x < SIDE) && (*y < SIDE))
-			{
-				return;
-			}
-		}
-	}
-	void make_move(int* x, int* y, char v) {
+	
+	void make_move(int* x, int* y) {
 		{
 			while (true)
 			{
